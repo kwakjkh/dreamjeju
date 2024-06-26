@@ -1,0 +1,161 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: royalblue;
+    position: relative;
+}
+.title{
+    width: 300px;
+    float: left;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+}
+.menu{
+    float: left;
+}
+.menu > ul{
+    width: 60%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    
+}
+.menu li{
+    float: left;
+    flex: 1;
+    color: white;
+    text-align: center;
+    
+}
+.banner{
+    width: 100%;
+    height: 300px;
+    background: url(../images/photo-1.jpg);
+}
+/* 메인 */
+main{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+main > ul, div{
+    flex: 1;
+}
+/* 게시판 */
+.board{
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+}
+.board li{
+    width: 100%;
+    height: 100%;
+}
+.board li h3{
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    color: red;
+    line-height: 60px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+.board li ul{
+    width: 100%;
+    height: 80%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ddd;
+}
+.board li ul li{
+    flex: 1;
+    list-style: disc;
+    margin-left: 30px;
+}
+.board a{
+    line-height: 36.8px;
+    color: black;
+}
+/* 사진메뉴 */
+.photo ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.photo ul li{
+    flex: 1;
+    text-align: center;
+}
+.photo ul li img{
+    border-radius: 50%;
+}
+.photo ul li span{
+    display: block;
+    margin-top: 10px;
+}
+hr{
+    border: 1px solid #333;
+}
+/* 하단 */
+footer{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.bottom{
+    width: 45%;
+    height: 100px;
+    float: left;
+}
+.bottom > ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.bottom > ul > li{
+    flex: 1;
+}
+.bottom ul > li > ul > li{
+    float: left;
+    padding: 0 20px;
+    text-align: center;
+    margin: 10px 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    line-height: 30px;
+}
+.bottom p{
+    line-height: 50px;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.icons{
+    height: 100%;
+    float: right;
+}
+.icons a{
+    line-height: 100px;
+}
